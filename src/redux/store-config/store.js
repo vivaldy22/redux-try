@@ -1,10 +1,6 @@
-import { combineReducers, createStore } from "redux";
-import reducer from "../reducers/counter";
+import { createStore } from "redux";
+import calcReducer from "../reducers/calcReducer";
 
-// const rootReducer = combineReducers({
-//   reducer,
-// });
-
-const store = createStore(reducer);
+const store = createStore(calcReducer);
 
 export { store };
