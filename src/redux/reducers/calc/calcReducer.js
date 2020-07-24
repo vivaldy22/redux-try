@@ -2,7 +2,7 @@ const initialState = {
   result: 0,
 };
 
-const calcReducer = (state = initialState, action) => {
+const calc = (state = initialState, action) => {
   const { type, operand1, operand2 } = action;
   switch (type) {
     case "+":
@@ -35,4 +35,4 @@ const calcReducer = (state = initialState, action) => {
   }
 };
 
-export default calcReducer;
+export default calc;
